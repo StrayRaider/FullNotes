@@ -108,8 +108,30 @@
  - tmp : temporary storage for programs or people to use 
  - proc : operateing system state ... we will se...
 
-# page 30
+## Operating System Dİrectories
+ lowest-leve part of linux operating system:
+ - /boot
+   - Files for booting the system. This is where kernel lives, typically named /boot(vmlinuz od smilar
+ - /lost+found
+   - Damaged files that where rescued by a disk recovery tool
+ - /proc
+   - Describes currently running process
+ the files in proc provide views into the running kernel. they are zero sized, read only, dated now.
+
+## File Protections
+  Who has permission?
+  every file and directory has an owner who has permission to do anythink with it. it is who created it. but ownership can be changed by the superuser.
+  Additionally, a predefined group of users may have permission to access a file.
+  Finally can be opened to all users with login accounts on system. you'll also see this set of users called the world or simply other.
+ File owners, groups and the world may each have permission to read, write(modify), execute(run) particular files. Permissions also extend to directories, which users can read (access files within the directory), write(create and delete files within directory), and execute(enter the directory with cd).
+
+# page 32
 
 
 
 
+
+
+
+# Shell Notes : 
+ - ls -l : uzun liste biçminde dosya hakkında bilgi verir : yetkiler, kullanıcı, tarih vb.
