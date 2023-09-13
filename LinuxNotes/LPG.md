@@ -125,7 +125,45 @@
   Finally can be opened to all users with login accounts on system. you'll also see this set of users called the world or simply other.
  File owners, groups and the world may each have permission to read, write(modify), execute(run) particular files. Permissions also extend to directories, which users can read (access files within the directory), write(create and delete files within directory), and execute(enter the directory with cd).
 
-# page 32
+  to see the ownership and permissions of a file use -l flag for directory use -ld flag
+
+  position : Meaning
+     1     :   - = file, d = dir, l = sybolic link, p = named pipe, c = character device, b = block device
+     2-4 : Read, write, exec for file's owner
+     5-7 : Read, write, exec for file's group
+     8-10 : Read, write, exec for file's users
+
+## Shell Features
+  to see who's logged into the computer, use : who
+  to learnd running bash program use : echo $SHELL
+  when you run a command it might be a Linux program or built-in command to learn use ; type command.
+    type cd
+
+## Selevted Features of tge bash Shell
+
+### Wildcards
+  they are a shorthand for sets of files with similar names.
+  a* means all files whose names begin with 'a'
+  
+  ls never knows you used a wildcard : it sees only the final list of filenames after the shell expands the wildcard.
+  wildcards are handled compleately by the shell befor the associated program even runs.
+
+### Dot Files
+  filenames with a leading period. they are called also "hidden files".
+  ls will omit the file from directory listings, unless you provide the -a option.
+
+  wildcards never match two characters: a leading presiod, and the directory slash (/).
+
+ Wildcard : Meaning
+ *       : Zero or more consecutive characters
+ ?       : Any single character (bir karakterin yerine gelebilecek olanları doldurur)
+ [set]   : any single character in the given as set, mostly usage is like [aeiou] or [a-z] for all letters
+ [ ^set] : any single character not in given set, such as [ ^0-9] to mean any nondigit
+ [!set]  : Same as [ ^set]
+
+### Brace expansion
+
+# page 36
 
 
 
