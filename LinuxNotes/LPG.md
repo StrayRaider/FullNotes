@@ -162,8 +162,50 @@
  [!set]  : Same as [ ^set]
 
 ### Brace expansion
+ {x,yy,zzz}
+ uses this 3 list element and add's it to the word
+ sand{x,yy,zzz} means : sandx sandyy sandyyy
 
-# page 36
+### Shell Variables
+ MYVAR=3
+ echo $MYVAR
+
+ Some standart defined variables
+
+|--|--|
+| DISPLAY |X window manager name|
+| HOME | home directory|
+| LOGNAME | your login name|
+| MAIL | your incomin mailbox|
+| OLDPWD | shell's previous directory|
+| PATH | shell search path|
+| PWD | shell's current dir|
+| SHELL | the path to ypur shell|
+| TERM | the type of your terminal|
+| USER | login name|
+
+To make a variable avaliable to other programs your shell invokes use the export command:
+ export MYVAR
+ export MYVAR=3
+
+To list a shell's encironment variables run : printenv
+
+
+### Search Path
+ program are scattered to /bin and /usr/bin dirs. when you run a command the var PATH tells the shell ehere to look.
+ when you run who the shell looks at the $PATH var's directories.
+
+ To add directories to your shell's search path temporary, modifiy the PATH var.
+```
+ PATH=$PATH:/usr/emrebin
+```
+this affects the current shell. To make it permant modify the PATH variable in your startup file ~.bash_profile
+
+### Aliases
+ The aliases are shortcut definitions.
+ alias ll='ls -lG'
+
+# page 39
 
 
 

@@ -8,4 +8,5 @@ invoke : çağırmak
 omit : dahil etmemek atlamak 
 unless : -mezse yoksa olmazsa
 consecutive : ardışık sıralı peşpeşe
-
+scattered : dağılmış
+alias : takmaAd
